@@ -59,8 +59,9 @@ switch ($action) {
         $due_date_f = $due_date_o->format($format_string); 
         
         // get the current date and time and format it
-        $current_date_f = 'not implemented yet';
-        $current_time_f = 'not implemented yet';
+        $current_date_o = new DateTime();
+	$current_date_f = $current_date_o->format($format_string);
+        $current_time_f = $current_date_o->format('g:i:s a');
         
         // get the amount of time between the current date and the due date
         // and format the due date message
