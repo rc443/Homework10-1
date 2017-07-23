@@ -53,6 +53,9 @@ switch ($action) {
 		break;
 	}
 
+	//set a format string for all dates
+	$format_string = 'F j, Y';
+
         // format both dates
         $invoice_date_f = $invoice_date_o->format($format_string);
         $due_date_f = $due_date_o->format($format_string); 
