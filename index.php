@@ -74,9 +74,11 @@ switch ($action) {
 		}
 
        // and format the due date message
-        $due_date_message = 'not implemented yet';
+        $due_date_message = $time_span->format(
+		'This invoice is due in %y years, %m months, and %d days.');
+	}
 
-        break;
+        	break;
 }
 include 'date_tester.php';
 ?>
